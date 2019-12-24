@@ -1,0 +1,17 @@
+{
+  "name": "react-scrape",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client:dev": "yarn workspace client start",
+    "server:dev": "yarn workspace server start",
+    "dev": "run-p server:dev client:dev"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
